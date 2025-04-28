@@ -1,0 +1,11 @@
+services:
+  p4-api-bridge:
+    image: p4-api-bridge:latest
+    build:
+      context: .
+    privileged: true
+    stdin_open: true  # Interactive mode
+    tty: true  # Interactive mode
+    network_mode: host  # Fix for "Error setting resource limits. Mininet's performance may be affected"
+    volumes:
+      - "./..:/workspace/mnt"  # Mount the project root directory to /workspace/mnt in the container

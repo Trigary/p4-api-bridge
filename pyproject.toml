@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "p4-api-bridge"
+description = "Use various P4 control plane APIs through a shared interface."
+keywords = ["p4", "control plane"]
+dynamic = ["version"]
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python"
+]
+
+[project.urls]
+Repository = "https://github.com/Trigary/p4-api-bridge.git"
