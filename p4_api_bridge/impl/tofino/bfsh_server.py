@@ -54,9 +54,10 @@ class Container:
             print('Unable to read configuration, closing connection')
             return
 
+        print('Configuration received: %s' % config_json_string)
         config_json = json.loads(config_json_string)
-        program_name: str = config_json['program_name']
-        enable_acknowledgments: bool = config_json['enable_acknowledgments']
+        program_name = config_json['program_name']
+        enable_acknowledgments = config_json['enable_acknowledgments']
 
         print('Clearing pipeline...')
         # noinspection PyBroadException

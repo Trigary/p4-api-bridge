@@ -62,6 +62,7 @@ for switch in switches:
     switch.api.table_add('MyIngress.my_table', ['10.1.1.2/24'], 'MyIngress.ip_forward', ['s1-eth0'])
 
     with switch.api.try_create_batch():
+        # ...
         pass  # Execute multiple operations in a single batch, if the underlying API supports it
 
 # Close the API bridge instances
