@@ -25,7 +25,7 @@ from p4_api_bridge import SwitchApiConfig, SwitchBase, ApiBridgeFactory, ApiBrid
 # Import switch-specific classes
 from p4_api_bridge import SimpleSwitchThriftApiConfig, NikssCtlApiConfig
 
-# The factory is responsible for creating and cache API brides
+# The factory is responsible for creating and caching API bridges
 api_factory = ApiBridgeFactory()
 
 
